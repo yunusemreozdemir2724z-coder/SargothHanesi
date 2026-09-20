@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rothad Hanesi — Sargoth</title>
+<meta name="description" content="Rothad Hanesi — Sargoth Baronluğu'nun resmi hane arşivi.">
+<style>
+:root{--black:#070707;--ink:#0d0b0a;--red:#7e1719;--red2:#b32827;--gold:#d8a947;--gold2:#f2cf76;--paper:#e9dcc1;--muted:#b9b0a2;--line:rgba(216,169,71,.32);--shadow:0 25px 90px #0009}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% 0,#241713,#070707 48%,#030303);color:var(--paper);font-family:Georgia,'Times New Roman',serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background-image:linear-gradient(90deg,transparent 0 5%,rgba(126,23,25,.045) 5% 7%,transparent 7% 93%,rgba(126,23,25,.045) 93% 95%,transparent 95%),url('assets/rothad-sancak.webp');background-size:auto,cover;background-position:center;opacity:.08;pointer-events:none;z-index:-2}
+body:after{content:"";position:fixed;inset:0;background:radial-gradient(circle at 50% 35%,transparent 0 30%,#000c 100%);pointer-events:none;z-index:-1}
+a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92vw);margin:auto}
+.topline{height:3px;background:linear-gradient(90deg,#111,var(--red),var(--gold),var(--red),#111)}
+nav{position:fixed;top:3px;left:0;right:0;z-index:50;background:#070707d9;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;gap:12px;align-items:center}.brand img{width:44px;height:44px;object-fit:cover;border:1px solid var(--gold);border-radius:5px}.brand strong{font-size:17px;letter-spacing:.14em}.brand small{display:block;color:var(--gold);font-size:9px;letter-spacing:.27em;margin-top:2px}
+.links{display:flex;gap:23px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#d4c9b6}.links a:hover{color:var(--gold2)}
+.hero{min-height:100vh;display:grid;place-items:center;position:relative;padding:130px 0 80px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(90deg,#050505c8 0 12%,transparent 38%,#050505aa 100%),linear-gradient(180deg,#0004,#000 93%),url('assets/rothad-sancak.webp') center/cover;opacity:.72;filter:saturate(.9)}
+.hero-bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 0 8%,#b3282730 8% 10%,transparent 10% 92%,#d8a94718 92% 94%,transparent 94%)}
+.hero-content{position:relative;text-align:center;max-width:920px}.crest{width:145px;height:145px;margin:auto;border:1px solid var(--gold);padding:10px;background:#050505c9;box-shadow:0 0 90px #d8a94725;transform:rotate(0deg)}.crest img{width:100%;height:100%;object-fit:cover}
+.kicker{font-size:10px;letter-spacing:.42em;color:var(--gold2);text-transform:uppercase;margin:28px 0 12px}.hero h1{font-size:clamp(52px,9vw,105px);line-height:.88;letter-spacing:.08em;text-transform:uppercase;margin:0;text-shadow:0 10px 50px #000}.hero h2{font-size:clamp(15px,2vw,23px);letter-spacing:.48em;color:#d4c9b6;margin:24px 0 12px}.motto{font-style:italic;color:var(--gold2);font-size:18px}.hero-actions{margin-top:35px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{border:1px solid var(--line);padding:13px 19px;font-size:10px;letter-spacing:.17em;text-transform:uppercase;background:#0c0908cc;transition:.25s}.btn.primary{background:linear-gradient(135deg,#8e1b1d,#4c0c0d);border-color:#d8a94777}.btn:hover{transform:translateY(-3px);border-color:var(--gold2);box-shadow:0 14px 40px #0008}
+section{padding:105px 0}.section-title{max-width:760px;margin-bottom:42px}.eyebrow{color:var(--gold);font-size:10px;letter-spacing:.3em;text-transform:uppercase}.section-title h2{font-size:clamp(36px,6vw,66px);line-height:1;margin:9px 0 15px}.section-title p{color:var(--muted);font-size:16px}.orn{height:1px;width:90px;background:var(--gold);margin:20px 0}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:30px}.story-card{border:1px solid var(--line);background:linear-gradient(135deg,#120d0bdf,#080808e8);padding:32px;box-shadow:var(--shadow)}.story-card p{color:#d0c6b5;line-height:1.9;margin:0 0 17px}.quote{border-left:2px solid var(--gold);padding:18px 22px;color:var(--gold2);font-size:22px;font-style:italic;background:#d8a94708;margin:25px 0}.story-art{min-height:620px;border:1px solid var(--line);background:url('assets/bremond.png') center/cover;box-shadow:var(--shadow);position:relative}.story-art span{position:absolute;bottom:20px;left:20px;background:#050505dd;border:1px solid var(--line);padding:10px 14px;font-size:10px;letter-spacing:.2em}
+.map-wrap{position:relative;border:1px solid var(--line);padding:10px;background:#0b0907;box-shadow:var(--shadow)}.map-wrap img{display:block;width:100%;height:auto;filter:saturate(.8) contrast(1.05)}.map-overlay{position:absolute;inset:10px;pointer-events:none}.pin{position:absolute;pointer-events:auto;width:20px;height:20px;border-radius:50%;border:2px solid var(--gold2);background:var(--red);box-shadow:0 0 0 5px #d8a94725,0 0 25px #d8a94777;cursor:pointer;transition:.2s}.pin:hover{transform:scale(1.35)}.pin span{position:absolute;left:28px;top:-8px;white-space:nowrap;background:#070707df;border:1px solid var(--line);padding:6px 8px;color:var(--gold2);font-size:9px;letter-spacing:.15em}.p1{left:49%;top:64%}.p2{left:27%;top:43%}.p3{left:14%;top:71%}.p4{left:77%;top:44%}
+.legend{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:15px}.legend-card{border:1px solid var(--line);background:#0c0a08;padding:17px}.legend-card b{color:var(--gold2);font-size:14px}.legend-card p{color:var(--muted);font-size:12px;margin:4px 0 0}
+.members{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.member{border:1px solid var(--line);background:linear-gradient(180deg,#15100de8,#090807);overflow:hidden;cursor:pointer;transition:.3s}.member:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:#f2cf7688}.member-img{aspect-ratio:4/5;background:#0a0807 center/cover}.member-info{padding:18px}.member-role{font-size:9px;color:var(--gold);letter-spacing:.22em;text-transform:uppercase}.member-name{font-size:20px;margin-top:5px}.member-note{font-size:12px;color:var(--muted);margin-top:5px}
+.member.bremond .member-img{background-image:url('assets/bremond.png')}.member.murolas .member-img{background-image:url('assets/murolas.png')}.member.esdicnha .member-img{background-image:url('assets/esdicnha.png')}.member.lenox .member-img{background-image:url('assets/lenox.png')}
+.placeholder{aspect-ratio:4/5;display:grid;place-items:center;color:#705e48;background:radial-gradient(circle,#2a1a14,#090807)}.placeholder strong{font-size:35px;color:#c09645}.placeholder span{display:block;text-align:center;font-size:9px;letter-spacing:.2em;margin-top:8px}
+.hierarchy{max-width:920px;margin:auto;display:flex;flex-direction:column;align-items:center}.rank{width:min(650px,100%);border:1px solid var(--line);background:linear-gradient(90deg,#170c0ddd,#0a0908ee);padding:19px 23px;margin:7px 0;display:flex;align-items:center;gap:18px}.rank .icon{font-size:26px;color:var(--gold2);width:40px;text-align:center}.rank small{font-size:9px;color:var(--gold);letter-spacing:.2em}.rank h3{margin:3px 0;font-size:21px}.rank p{margin:0;color:var(--muted);font-size:12px}.special{border-color:#e2bd6870;background:linear-gradient(90deg,#3b1714,#100b09)}.branch{display:grid;grid-template-columns:1fr 1fr;gap:12px;width:min(820px,100%)}.branch .rank{width:100%}
+.laws{display:grid;grid-template-columns:280px 1fr;gap:20px}.tabs{position:sticky;top:95px;align-self:start;display:grid;gap:8px}.tab{padding:15px;border:1px solid var(--line);background:#0d0908;color:#c8bca9;text-align:left;cursor:pointer;font-family:inherit}.tab.active,.tab:hover{background:linear-gradient(90deg,#7d1719,#260b0b);color:#fff;border-color:#d8a94788}.law-panel{border:1px solid var(--line);background:#0c0908ed;padding:32px}.law-panel h3{font-size:30px;margin-top:0}.law-panel p,.law-panel li{color:#cfc5b4;line-height:1.8}.law-panel ul{padding-left:21px}.law-panel blockquote{border-left:2px solid var(--gold);padding:16px 20px;margin:20px 0;color:var(--gold2);background:#d8a94707}
+.timeline{border-left:1px solid var(--line);margin-left:10px}.time{position:relative;padding:0 0 35px 38px}.time:before{content:"";position:absolute;left:-7px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--red);border:1px solid var(--gold)}.time b{color:var(--gold);font-size:10px;letter-spacing:.2em}.time h3{margin:5px 0;font-size:24px}.time p{color:var(--muted);margin:0}
+.cta{text-align:center;border:1px solid var(--line);padding:60px 25px;background:radial-gradient(circle,#4b1817,#0b0908 60%);box-shadow:var(--shadow)}.cta h2{font-size:clamp(34px,5vw,60px);margin:5px}.cta p{color:#c7bca9;max-width:680px;margin:12px auto 25px}
+footer{border-top:1px solid var(--line);padding:35px 0;color:#817665;font-size:10px;letter-spacing:.18em;text-align:center}
+.modal{position:fixed;inset:0;z-index:100;background:#000c;display:none;place-items:center;padding:20px}.modal.open{display:grid}.modal-box{width:min(580px,100%);background:#0c0908;border:1px solid var(--gold);padding:32px;box-shadow:var(--shadow);position:relative}.modal-box img{width:100%;max-height:300px;object-fit:cover;margin-bottom:18px}.close{position:absolute;right:15px;top:10px;border:0;background:none;color:var(--gold);font-size:28px;cursor:pointer}.modal-box small{color:var(--gold);letter-spacing:.2em}.modal-box h3{font-size:32px;margin:4px 0 12px}.modal-box p{color:#cfc5b4;line-height:1.8}
+.reveal{opacity:0;transform:translateY(24px);transition:.8s}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.links{display:none}.members{grid-template-columns:repeat(2,1fr)}.story,.laws{grid-template-columns:1fr}.story-art{min-height:480px}.legend{grid-template-columns:repeat(2,1fr)}.tabs{position:static}}
+@media(max-width:560px){section{padding:75px 0}.members,.branch{grid-template-columns:1fr}.legend{grid-template-columns:1fr}.hero h1{font-size:55px}.hero h2{letter-spacing:.25em}.nav{height:65px}.brand strong{font-size:13px}.brand img{width:38px;height:38px}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<nav><div class="wrap nav">
+<a class="brand" href="#top"><img src="assets/rothad-sancak.webp" alt=""><div><strong>ROTHAD HANESİ</strong><small>SARGOTH BARONLUĞU</small></div></a>
+<div class="links"><a href="#hikaye">Hikâye</a><a href="#harita">Haritalar</a><a href="#sicil">Hane Sicili</a><a href="#hiyerarsi">Hiyerarşi</a><a href="#yasalar">Yasalar</a><a href="#karargah">Karargâh</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="hero-bg"></div><div class="hero-content">
+<div class="crest"><img src="assets/rothad-sancak.webp" alt="Rothad sancağı"></div>
+<div class="kicker">Vlandia • Sargoth • Dey Rothad</div>
+<h1>Rothad<br>Hanesi</h1><h2>S A R G O T H</h2><div class="motto">“Mertlik kanundur, söz kalkandır.”</div>
+<div class="hero-actions"><a class="btn primary" href="#hikaye">Hane Kroniğini Oku</a><a class="btn" href="#sicil">Hane Sicili</a><a class="btn" href="https://discord.gg/uGWhqzA2U" target="_blank">Discord Karargâhı</a></div>
+</div></header>
+
+<section id="hikaye" class="reveal"><div class="wrap">
+<div class="section-title"><div class="eyebrow">01 / Hane Kroniği</div><h2>Rothad'ın kapıları korkuyla açılmaz.</h2><div class="orn"></div><p>Sargoth'un sert sınırında şekillenen bir hane; sadakat, onur ve toprağa bağlılık üzerine yükselen bir hikâye.</p></div>
+<div class="story"><article class="story-card">
+<p>Krallığın en uç noktasında, rüzgârın bile temkinli estiği o sert sınır hattında Sargoth şehri uzanırdı. Sargoth, ticaretle değil, kılıç sesiyle anılırdı. Her mevsim başka bir ordunun gölgesi düşer, her gece başka bir yağma ateşi ufku kızartırdı.</p>
+<p>Halkı korkuyla yaşamaya alışmıştı; kapılar gün batmadan kapanır, çocuklara sessiz olmaları öğretilirdi. Bu kale taşla örülmüş olsa da, onu ayakta tutan harç sadakatti. Rothad Hanesi'nin mührü sadece bir arma değil; bir yemin, bir yaşam biçimiydi.</p>
+<div class="quote">“Rothad’ın kapıları korkuyla açılmaz.”</div>
+<p>Kalenin beyi Brémond dey Rothad, savaş meydanında olduğu kadar suskunluğuyla da tanınırdı. Kuşatma başladığında Sargoth çoktan düşmüş gibiydi. Şehir defalarca yağmalanmış, sokaklar boşalmıştı. Tüccarlar kaçmış, askerler dağılmış, geriye sadece duman ve korku kalmıştı.</p>
+<p>Düşman ordusu dalga dalga geliyordu. Gece baskınları, gizli geçitler ve rüşvet teklifleri… Hepsi denendi. Bir gece ileri gelenler Beornraed’in çadırında toplandı.</p>
+<p>“Beyim,” dediler, “Sargoth düştü. Biz de çekilelim. Bu savaş kazanılmaz.” Brémond ağır ağır ayağa kalktı ve gözlerini kapıya dikti.</p>
+<div class="quote">“Rothad’ın kapıları korkuyla açılmaz.”</div>
+</article><div class="story-art"><span>BRÉMOND DEY ROTHAD • BARON OF SARGOTH</span></div></div>
+</div></section>
+
+<section id="harita" class="reveal"><div class="wrap">
+<div class="section-title"><div class="eyebrow">02 / Baronluk Haritası</div><h2>Sargoth toprakları.</h2><div class="orn"></div><p>Hanenin merkezi, bağlı köyleri ve Veron hattı tek bir harita üzerinde.</p></div>
+<div class="map-wrap"><img src="assets/sargoth-haritasi.png" alt="Sargoth Baronluğu ve bağlı köylerin yol haritası"><div class="map-overlay">
+<button class="pin p1" onclick="openPlace('Sargoth Baronluğu','Rothad Hanesi’nin merkezi ve Baronluğun kalbi.')"><span>SARGOTH</span></button>
+<button class="pin p2" onclick="openPlace('Etirburg','Zengin demir yataklarıyla Sargoth’a cevher sağlayan sınır köyü.')"><span>ETİRBURG</span></button>
+<button class="pin p3" onclick="openPlace('Calioc','Keten üretimiyle tanınan, Sargoth’un ihtiyaçlarını karşılayan köy.')"><span>CALİOC</span></button>
+<button class="pin p4" onclick="openPlace('Veron Kalesi','Güney hattının stratejik kalesi ve Murolas’ın görev alanı.')"><span>VERON</span></button>
+</div></div>
+<div class="legend">
+<div class="legend-card"><b>SARGOTH</b><p>Baronluğun merkezi.</p></div><div class="legend-card"><b>ETİRBURG</b><p>Demir ve sınır savunması.</p></div><div class="legend-card"><b>CALİOC</b><p>Keten ve tarımsal emek.</p></div><div class="legend-card"><b>VERON</b><p>Güney hattının kalesi.</p></div>
+</div></div></section>
+
+<section id="sicil" class="reveal"><div class="wrap">
+<div class="section-title"><div class="eyebrow">03 / Hane Sicili</div><h2>Sancağın taşıyıcıları.</h2><div class="orn"></div><p>Hane üyeleri ve görevleri. Karakter görseli bulunan üyelerde görsel doğrudan sicile işlendi.</p></div>
+<div class="members">
+<div class="member bremond" onclick="openMember('Brémond dey Rothad','BARON','Sargoth Baronluğu’nun beyi ve Rothad Hanesi’nin lideri.','assets/bremond.png')"><div class="member-img"></div><div class="member-info"><div class="member-role">Baron</div><div class="member-name">Brémond dey Rothad</div><div class="member-note">Sargoth</div></div></div>
+<div class="member murolas" onclick="openMember('Murolas dey Veron','BARONUN ELİ / ÖZEL MAKAM','Baron’a doğrudan bağlı, kendine özgü yetki alanına sahip özel makam.','assets/murolas.png')"><div class="member-img"></div><div class="member-info"><div class="member-role">Özel Makam</div><div class="member-name">Murolas dey Veron</div><div class="member-note">Veron Kalesi</div></div></div>
+<div class="member"><div class="placeholder"><div><strong>♜</strong><span>REEVE</span></div></div><div class="member-info"><div class="member-role">Reeve</div><div class="member-name">Viserys</div><div class="member-note">Hane görevlisi</div></div></div>
+<div class="member esdicnha" onclick="openMember('Esdicnha dey Calioc','CHIEF','Calioc’un sorumlusu ve Rothad Hanesi’nin sadık Chief’i.','assets/esdicnha.png')"><div class="member-img"></div><div class="member-info"><div class="member-role">Chief</div><div class="member-name">Esdicnha dey Calioc</div><div class="member-note">Calioc</div></div></div>
+<div class="member lenox" onclick="openMember('Lenox de Etirburg','CHIEF','Etirburg’un sorumlusu; askeri ve diplomatik yetenekleriyle hane içinde yükselen Chief.','assets/lenox.png')"><div class="member-img"></div><div class="member-info"><div class="member-role">Chief</div><div class="member-name">Lenox de Etirburg</div><div class="member-note">Etirburg</div></div></div>
+<div class="member"><div class="placeholder"><div><strong>♞</strong><span>ESQUIRE</span></div></div><div class="member-info"><div class="member-role">Esquire</div><div class="member-name">Tashkun</div><div class="member-note">Hane hizmeti</div></div></div>
+<div class="member"><div class="placeholder"><div><strong>♙</strong><span>HEAD OFFICER</span></div></div><div class="member-info"><div class="member-role">Head Officer</div><div class="member-name">Vlamond</div><div class="member-note">Subay yapılanması</div></div></div>
+<div class="member"><div class="placeholder"><div><strong>♙</strong><span>OFFICER</span></div></div><div class="member-info"><div class="member-role">Officer</div><div class="member-name">Kenshi</div></div></div>
+<div class="member"><div class="placeholder"><div><strong>♙</strong><span>OFFICER</span></div></div><div class="member-info"><div class="member-role">Officer</div><div class="member-name">Pekarkos</div></div></div>
+<div class="member"><div class="placeholder"><div><strong>♙</strong><span>OFFICER</span></div></div><div class="member-info"><div class="member-role">Officer</div><div class="member-name">Vasilius</div></div></div>
+</div></div></section>
+
+<section id="hiyerarsi" class="reveal"><div class="wrap">
+<div class="section-title"><div class="eyebrow">04 / Hiyerarşi</div><h2>Hanenin düzeni.</h2><div class="orn"></div></div>
+<div class="hierarchy">
+<div class="rank"><div class="icon">♛</div><div><small>BARON</small><h3>Brémond dey Rothad</h3><p>Sargoth Baronluğu’nun beyi.</p></div></div>
+<div class="rank special"><div class="icon">⚜</div><div><small>BARONUN ELİ • ÖZEL MAKAM</small><h3>Murolas dey Veron</h3><p>Baronun altında, diğer rütbelerden ayrı özel yetki alanı.</p></div></div>
+<div class="branch"><div class="rank"><div class="icon">♗</div><div><small>REEVE</small><h3>Viserys</h3><p>Hane görevlisi.</p></div></div><div class="rank"><div class="icon">♗</div><div><small>CHIEF</small><h3>Lenox de Etirburg</h3><p>Etirburg sorumlusu.</p></div></div></div>
+<div class="branch"><div class="rank"><div class="icon">♗</div><div><small>CHIEF</small><h3>Esdicnha de Calioc</h3><p>Calioc sorumlusu.</p></div></div><div class="rank"><div class="icon">♞</div><div><small>ESQUIRE</small><h3>Tashkun</h3><p>Hane hizmeti.</p></div></div></div>
+<div class="rank"><div class="icon">♙</div><div><small>HEAD OFFICER</small><h3>Vlamond</h3><p>Subay yapılanmasının başı.</p></div></div>
+<div class="branch"><div class="rank"><div class="icon">♙</div><div><small>OFFICER</small><h3>Kenshi</h3></div></div><div class="rank"><div class="icon">♙</div><div><small>OFFICER</small><h3>Pekarkos</h3></div></div></div>
+<div class="rank"><div class="icon">♙</div><div><small>OFFICER</small><h3>Vasilius</h3></div></div>
+</div></div></section>
+
+<section class="reveal"><div class="wrap"><div class="section-title"><div class="eyebrow">05 / Toprak Kronikleri</div><h2>Toprak yanar, hane yeniden kurar.</h2><div class="orn"></div></div>
+<div class="story">
+<article class="story-card"><h3>Etirburg</h3><p>Vlandia Krallığı’nın sert sınır hattında, savaşların ve yağmaların eksik olmadığı Etirburg defalarca saldırıya uğradı. Ama her seferinde yeniden ayağa kalktı. Çünkü gücü taşta değil, halkının direncindeydi.</p><p>Zengin demir yatakları Sargoth’a sürekli cevher sağlar. Köylüler gerektiğinde madenci, gerektiğinde savaşçı olur; kervanlarını korur ve sınırda hayatta kalmak için mücadele eder.</p><div class="quote">“Sınırda zayıf olan yok olur… Etirburg asla zayıf olmadı.”</div></article>
+<article class="story-card"><h3>Calioc</h3><p>Calioc, savaşların ve hain yağmaların eksik olmadığı topraklarda defalarca sınandı. Tarlaları yakıldı, halkı dağıldı; fakat her yıkımdan sonra yeniden ektiler, yeniden dokudular.</p><p>Köy özellikle keten üretimiyle tanınır. Sargoth’un savaşçılarının giysileri, sargıları ve ihtiyaçları Calioc’un emeğinden pay alır.</p><div class="quote">“Toprak yanar, ürün gider… ama Calioc yine eker.”</div></article>
+</div></div></section>
+
+<section id="yasalar" class="reveal"><div class="wrap">
+<div class="section-title"><div class="eyebrow">06 / Kanun ve İlkeler</div><h2>Hanenin yasası.</h2><div class="orn"></div><p>Kurallar iki ayrı katmanda tutulur: genel hane yasaları ve Dey Rothad temel ilkeleri.</p></div>
+<div class="laws"><div class="tabs"><button class="tab active" onclick="law('genel',this)">GENEL YASALAR</button><button class="tab" onclick="law('ilkeler',this)">DEY ROTHAD TEMEL İLKELERİ</button></div>
+<div class="law-panel" id="law">
+<h3>ANA KURAL</h3>
+<blockquote>Uyulması gereken esas kural önce Krala sonra Krallığa son olarak hanelerimize sadakatle bağlı olmaktır. Esas bağlılık Kraladır.</blockquote>
+<ul>
+<li>Krallığın kuralları herkes tarafından biliniyor kabul edilir; ihlaller cezalara yol açabilir.</li>
+<li>Yazı kanalında veya ses odasında bireyleri rahatsız edecek argo ve hakaret yasaktır.</li>
+<li>Ses kanallarında gereksiz ve rahatsız edici şekilde ses paneli kullanmak yasaktır.</li>
+<li>Yazı kanalında veya ses odalarında herkese açık şekilde tartışmak yasaktır.</li>
+<li>Sohbet ederken saygılı ve seviyeli olunacaktır.</li>
+<li>Dramalara dahil olmak, drama çıkartmak ve dramaları uzatmak yasaktır.</li>
+<li>Bir kişiyi yaş, din, dil, ırk veya siyasi görüşü dolayısıyla dışlamak, küçümsemek veya hakaret etmek yasaktır.</li>
+<li>Tarihteki Türk büyükleriyle alakalı hakaret içerikli konuşmalar veya paylaşımlar yasaktır.</li>
+<li>Sesli veya yazılı kanallarda siyasi tartışma yapılması yasaktır.</li>
+<li>Hiyerarşiyi herkese açık kanallarda eleştirmek yasaktır; şikâyet için ticket açılabilir.</li>
+<li>Savaş sırasında gereksiz konuşmalar yasaktır.</li>
+<li>Kasten TK atmak, toxiclik veya trollük yapmak yasaktır.</li>
+<li>Etkinlik sırasında genel sohbet kullanımı yasaktır.</li>
+<li>Her klan üyesi özel etkinliklerde veya gündelik TDM, duel vb. sunucularda örnek davranış sergilemelidir.</li>
+<li>Yetkili bilgisi veya izni dışında etkinliklerde klan tagı bulundurmak yasaktır; ihlali klandan atılmaya kadar gidebilir.</li>
+</ul></div></div></div></section>
+
+<section class="reveal"><div class="wrap"><div class="section-title"><div class="eyebrow">07 / Dey Rothad İlkeleri</div><h2>Sadakatten doğan düzen.</h2><div class="orn"></div></div>
+<div class="timeline">
+<div class="time"><b>I — SADAKAT VE BAĞLILIK</b><h3>Vlandia’ya sadakat</h3><p>Dey Rothad Hanesi Vlandia tahtına bağlılığını korur. Bağlı hanelere hürmet edilir ve refahları gözetilir.</p></div>
+<div class="time"><b>II — SAYGI VE ONUR</b><h3>Hane adını taşımak</h3><p>Hane dostlarına ve rakiplerine saygı; şeref ve haysiyetin korunması her mensubun görevidir.</p></div>
+<div class="time"><b>III — GÖREV VE SORUMLULUK</b><h3>Görevi eksiksiz yerine getirmek</h3><p>Üstlenilen görev yerine getirilir. Rothad lordu ve yüksek rütbeli yetkililerin talimatlarına hane disiplini içinde uyulur.</p></div>
+<div class="time"><b>IV — ADALET VE TARAFSIZLIK</b><h3>Doğruluk esastır</h3><p>Vlandia içinde tarafsız tavır; kişisel çıkarları yargılara karıştırmamak ve asılsız rivayetleri yaymamak esastır.</p></div>
+<div class="time"><b>V — İLETİŞİM VE DAYANIŞMA</b><h3>Tek beden gibi hareket etmek</h3><p>Hane mensupları ihtiyaç halinde birbirine destek olur. Emirler ve planlar açık biçimde paylaşılır; sorunlar lord veya yetkililere iletilir.</p></div>
+</div></div></section>
+
+<section id="karargah" class="reveal"><div class="wrap"><div class="cta"><div class="eyebrow">08 / Hane Karargâhı</div><h2>Sargoth’un sesi.</h2><p>Duyurular, etkinlikler, görevler ve hane içi iletişim için Rothad Hanesi’nin Discord karargâhına katıl.</p><a class="btn primary" href="https://discord.gg/uGWhqzA2U" target="_blank">DISCORD'A KATIL</a></div></div></section>
+<footer>ROTHAD HANESİ • SARGOTH BARONLUĞU • VLANDIA<br><br>“Mertlik kanundur, söz kalkandır.”</footer>
+
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><img id="mi" src="" alt=""><small id="mr"></small><h3 id="mn"></h3><p id="mt"></p></div></div>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+function openMember(n,r,t,img){document.getElementById('mn').textContent=n;document.getElementById('mr').textContent=r;document.getElementById('mt').textContent=t;document.getElementById('mi').src=img;document.getElementById('mi').style.display='block';document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden'}
+function openPlace(n,t){document.getElementById('mn').textContent=n;document.getElementById('mr').textContent='BARONLUK TOPRAĞI';document.getElementById('mt').textContent=t;document.getElementById('mi').style.display='none';document.getElementById('modal').classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('modal').classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+const general=document.getElementById('law').innerHTML;
+function law(which,el){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));el.classList.add('active');document.getElementById('law').innerHTML=which==='genel'?general:`<h3>DEY ROTHAD TEMEL İLKELERİ</h3><h4>I. Sadakat ve Bağlılık</h4><ul><li><b>Vlandia Krallığına Sadakat:</b> Dey Rothad Hanesi, Vlandia tahtına olan bağlılığını korur.</li><li><b>Bağlı Hanelere Hürmet:</b> de Calioc ve de Etirburg lordlarına sadakatle bağlı kalınır; bağlı hanelerin refahı gözetilir.</li></ul><h4>II. Saygı ve Onur</h4><ul><li><b>Her Birine Saygı:</b> Hane dostlarına ve rakiplerine saygı gösterilir.</li><li><b>Şeref ve Haysiyet:</b> Rothad adını taşıyan herkes hane onurunu korur.</li></ul><h4>III. Görev Bilinci ve Sorumluluk</h4><ul><li><b>Görev Sorumluluğu:</b> Üstlenilen görev eksiksiz yerine getirilir.</li><li><b>Bağlılık ve İtaat:</b> Rothad lordu ve yüksek rütbeli yetkililerin talimatlarına uyulur.</li></ul><h4>IV. Adalet ve Tarafsızlık</h4><ul><li><b>Adil Olma Yükümlülüğü:</b> Kişisel çıkarlar yargılara karıştırılmaz.</li><li><b>Dedikodulardan Kaçınma:</b> Asılsız rivayetler yayılmaz.</li></ul><h4>V. İletişim ve Dayanışma</h4><ul><li><b>Dayanışma Ruhuyla Hareket:</b> İhtiyaç halinde hane mensupları birbirine destek olur.</li><li><b>Açık İletişim:</b> Emirler ve planlar açıkça paylaşılır; sorunlar lord veya yetkililere iletilir.</li></ul>`}
+</script>
+</body>
+</html>
